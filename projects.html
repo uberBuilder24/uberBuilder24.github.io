@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects - The Uber Portfolio</title>
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="uberBuilder24">
+        <meta name="description" content="I like programming and baseball.">
+        <meta name="author" content="uberBuilder24">
+        <meta name="theme-color" content="#0aa1f2">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./styles/style.css">
+        <!-- Favicon -->
+        <link rel="icon" href="./assets/full.png">
+        <!-- Countdown Bar -->
+        <script src="./javascript/countdown.js"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- HLJS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/material.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+        <script>
+            window.onload = function() {
+                var allCodes = document.getElementsByTagName("code");
+                for (var i = 0; i < allCodes.length; i++) {
+                    hljs.highlightBlock(allCodes[i]);
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <div id="countdownBar"></div>
+        <section class="sub-header">
+            <navbar>
+                <a href="/">
+					<img src="./assets/full.png" alt="pfp" style="border-radius: 50%; object-fit: cover; object-position: center top;">
+				</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </navbar>
+            <h1>Projects</h1>
+        </section>
+        <section class="projects">
+            <div class="card">
+                <a href="https://uberbuilder24.itch.io/mans-best-friend" target="_blank">
+                    <img src="https://i.ibb.co/JB4z1g3/mans-best-friend.png">
+                    <h2>Man's Best Friend</h2>
+                    <p>Man's Best Friend is a game where you play as a person and a dog, and the goal of the game is to get through the level without either you or the dog dying.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://foxy.uberbuilder24.repl.co" target="_blank">
+                    <img src="https://i.ibb.co/rcN03mP/foxy.png">
+                    <h2>Foxy</h2>
+                    <p>Manage your little league teams.</p>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://linktr.ee/uberbuilder24" target="_blank"><i class="fa fa-tree"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <br>
+        </div>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+                
+            function showMenu() {
+                navLinks.style.right = "0px";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
